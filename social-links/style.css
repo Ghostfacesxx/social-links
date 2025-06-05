@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.login-box {
+    background-color: hsl(0, 0%, 12%);
+    width: 380px;
+    height: 580px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    padding: 40px 0 32px 0;
+    gap: 24px;
+}
+
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.nome {
+    font-size: 24px;
+    font-weight: 700;
+    width: 180px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+.cidade {
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    font-weight: 600;
+    width: 180px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 16px 0;
+}
+
+.descricao {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 0;
+}
+
+button {
+    width: 90%;
+    margin: 0;
+    padding: 14px 0;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+@media (max-width: 430px) {
+    .login-box {
+        width: 90vw;
+        min-width: 0;
+        height: auto;
+        padding: 32px 0 24px 0;
+    }
+    .botoes {
+        gap: 14px;
+    }
+    button {
+        width: 90%;
+        margin: 0;
+    }
+}
